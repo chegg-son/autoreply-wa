@@ -1,8 +1,8 @@
 function cekNilai(angka) {
   // Buka sheet
-  let sheetUrl = "https://docs.google.com/spreadsheets/d/1-mC2_n_EQkdHUYC8VT6cMqBMKC62m-VMIZCny4FEs4E/edit#gid=0";
+  let sheetUrl = LINK_menuju_spreadsheet;
   let file = SpreadsheetApp.openByUrl(sheetUrl);
-  let Saldo = file.getSheetByName("RESUME");
+  let Saldo = file.getSheetByName(NAMA-SHEET);
   let lastRowSaldo = Saldo.getLastRow();
 
   function hasNumber(str) {
